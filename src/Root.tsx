@@ -3,6 +3,7 @@ import { Composition } from "remotion";
 import { MyComposition } from "./Composition";
 import { ShieldIQPromo } from "./ShieldIQ/ShieldIQPromo";
 import { StressVsCalm } from "./StressVsCalm/StressVsCalm";
+import { SchoolbookDiagram } from "./Schoolbook/SchoolbookDiagram";
 
 export const RemotionRoot: React.FC = () => {
   return (
@@ -27,6 +28,14 @@ export const RemotionRoot: React.FC = () => {
         id="StressVsCalm"
         component={StressVsCalm}
         durationInFrames={480}
+        fps={30}
+        width={1920}
+        height={1080}
+      />
+      <Composition
+        id="SchoolbookDiagram"
+        component={SchoolbookDiagram}
+        durationInFrames={900}
         fps={30}
         width={1920}
         height={1080}
